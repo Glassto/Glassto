@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0c0c0c;
+  --color-secondary: #ddc6b6;
+  --color-accent: #f35216;
+  --color-accent-light: #ff9a75;
+
+  --shadow-border: 0 1px 0 0 #ddc6b6;
+
+  --drop-shadow-accent-sm: 0 0px 2px #f35216;
+  --drop-shadow-accent-light-2xl: 0 40px 32px #ff9a75;
+
+  --font-dm-sans: DM Sans, sans-serif;
+  --font-inter: Inter, sans-serif;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-xs: 30rem;
+
+  ----container-hero: 50.75rem;
+
+  --background-image-hero: url("./background.png");
+
+  --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+@layer base {
+  body {
+    @apply /* lg:overflow-auto overflow-hidden */ bg-primary font-dm-sans subpixel-antialiased;
+  }
+
+  .pattern {
+    @apply bg-hero absolute inset-0 -z-10 h-max md:min-h-205 sm:min-h-180 min-h-140 bg-cover bg-center transition-all ease-in duration-600;
+  }
+
+  .wrapper {
+    @apply relative mx-auto sm:px-10 px-5 sm:py-8 py-6;
+  }
+}
+
+@layer components {
+  /* w-25 */
+  .middle li {
+    @apply w-21 py-4.5 list-none font-inter text-center text-secondary hover:shadow-border hover:drop-shadow-accent-light-2xl cursor-pointer;
+  }
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

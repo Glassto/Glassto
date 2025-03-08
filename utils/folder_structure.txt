@@ -1,0 +1,26 @@
+/src
+  /assets
+    /images
+      logo.png
+    /styles
+      main.css
+  /components
+    /common
+      Button.jsx
+      Input.jsx
+    /layout
+      Header.jsx
+      Footer.jsx
+    /specific
+      Hero.jsx
+  /hooks
+    useAuth.js
+  /pages
+    Home.jsx
+    About.jsx
+  /services
+    api.js
+  /utils
+    helpers.js
+  App.jsx
+  index.jsx
