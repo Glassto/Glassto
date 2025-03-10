@@ -56,3 +56,16 @@
     display: none;
   }
 }
+
+@keyframes glow-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.animate-glow-sweep {
+  animation: glow-sweep 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -88,7 +88,7 @@ const MobileMenu = ({ isOpen }) => {
           <div className="mb-6 border-t border-secondary/20" />
           <button className="flex items-center justify-center gap-3 w-full px-4 py-1.5 bg-radial-[at_-50%_-75%] drop-shadow-accent-2xl from-accent-light to-accent font-inter transition-all duration-300 truncate text-white font-semibold rounded-lg">
             <p>Contact Us</p>
-            <img src="./images/arrow-top-right.svg" alt="Arrow Top Right" />
+            <img src="images/arrow-top-right.svg" alt="Arrow Top Right" />
           </button>
         </div>
       </div>

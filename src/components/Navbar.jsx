@@ -40,13 +40,18 @@ const Navbar = () => {
         {/* Navbar */}
 
         <nav
-          className={`flex justify-between items-center w-full xs:min-h-15.5 min-h-12 px-4 pr-3 border rounded-2xl backdrop-blur-sm bg-primary/15 hover:bg-primary/40 hover:drop-shadow-xl border-secondary/40 transition-all duration-300 ${
+          className={`relative overflow-hidden flex justify-between items-center w-full xs:min-h-15.5 min-h-12 px-4 pr-3 border rounded-2xl backdrop-blur-sm bg-primary/15 hover:bg-primary/40 hover:drop-shadow-xl border-secondary/40 transition-all duration-300 ${
             isScrolled ? "bg-primary/40 backdrop-blur-2xl" : ""
           }`}
         >
+          {/* Nav animation */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute -left-full top-0 w-1/2 h-full animate-glow-sweep bg-gradient-to-r from-transparent via-secondary/30 to-transparent opacity-20" />
+          </div>
+
           {/* Left-side */}
           <div className="left flex items-center gap-3 min-w-36 xs:py-4 py-3">
-            <img src="./images/light-logo.svg" alt="Logo" className="h-6 w-6" />
+            <img src="images/light-logo.svg" alt="Logo" className="h-6 w-6" />
             <h1 className="font-dm-sans text-xl font-semibold text-[#FDE5D5]">
               Glassto
             </h1>
@@ -58,7 +63,7 @@ const Navbar = () => {
             <li className="flex items-center justify-center gap-0.75">
               <p>Services</p>
               <img
-                src="./images/chevron-down.svg"
+                src="images/chevron-down.svg"
                 alt="Chevron Down"
                 className="h-4 opacity-60"
               />
@@ -72,7 +77,7 @@ const Navbar = () => {
           <div className="right hidden xs:flex items-center justify-end min-w-36 py-3 gap-4 ">
             <button className="flex items-center gap-3 w-max px-4 py-1.5 bg-radial-[at_-50%_-75%] hover:scale-105 hover:-translate-x-1 hover:drop-shadow-2xl from-accent-light to-accent font-inter transition-all duration-300 truncate text-white font-semibold rounded-lg">
               <p>Contact Us</p>
-              <img src="./images/arrow-top-right.svg" alt="Arrow Top Right" />
+              <img src="images/arrow-top-right.svg" alt="Arrow Top Right" />
             </button>
           </div>
         </nav>
@@ -84,7 +89,7 @@ const Navbar = () => {
           }`}
         >
           <img
-            src="./images/burger-menu.svg"
+            src="images/burger-menu.svg"
             alt="Burger Menu"
             className="h-8 w-8"
           />

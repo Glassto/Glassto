@@ -1,3 +1,4 @@
+
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-24 mx-auto max-w-[812px]">
@@ -7,7 +8,7 @@ const Hero = () => {
           Get Your Custom Website NOW -{" "}
           <span className="font-semibold">10% off</span>
         </h5>
-        <img src="./images/chevron-right.svg" alt="" />
+        <img src="images/chevron-right.svg" alt="" />
       </div>
 
       {/* Heading */}
@@ -35,7 +36,7 @@ const Hero = () => {
         </button>
         <button className="flex items-center justify-center gap-2 px-5 py-1 sm:w-30 w-full rounded-md bg-radial-[at_-50%_-75%] from-accent-light to-accent font-inter text-sm/7 text-white shadow-inner shadow-white/10">
           <p>Services</p>
-          <img src="./images/chevron-right.svg" alt="" className="h-3 w-3" />
+          <img src="images/chevron-right.svg" alt="" className="h-3 w-3" />
         </button>
       </div>
     </div>
