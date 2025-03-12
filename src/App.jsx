@@ -1,7 +1,7 @@
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/LandingPage/Hero";
-import Services from "./components/LandingPage/Services"
+import Services from "./components/LandingPage/Services/Services";
 
 function App() {
   return (

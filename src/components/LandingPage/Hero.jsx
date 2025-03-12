@@ -30,7 +30,7 @@ const Hero = () => {
 
       {/* Hero Buttons */}
       <div className="flex items-center justify-center sm:gap-6 gap-3 w-full my-12 text-white font-semibold">
-        <button className="px-5 py-1 sm:w-30 w-max rounded-md border border-accent font-inter text-sm/7  shadow-inner shadow-accent-light/10">
+        <button className="px-5 py-1 sm:w-30 w-max rounded-md border border-accent font-inter text-sm/7 shadow-inner shadow-accent-light/10 cursor-pointer">
           Portfolio
         </button>
         <button className="flex items-center justify-center gap-2 px-5 py-1 sm:w-30 w-full rounded-md bg-radial-[at_-50%_-75%] from-accent-light to-accent font-inter text-sm/7 text-white shadow-inner shadow-white/10">
