@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-24 mx-auto max-w-[812px]">
+    <div className="flex flex-col justify-center items-center mt-28 mx-auto max-w-[812px] overflow-y-hidden">
       {/* CTA Button */}
       <div className="CTAbutton flex gap-2 px-3 py-0.5 bg-primary/15 border border-secondary/15 rounded-2xl">
         <h5 className="text-white text-sm">
@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Buttons */}
-      <div className="flex items-center justify-center sm:gap-6 gap-3 w-full mt-10 text-white font-semibold">
+      <div className="flex items-center justify-center sm:gap-6 gap-3 w-full my-12 text-white font-semibold">
         <button className="px-5 py-1 sm:w-30 w-max rounded-md border border-accent font-inter text-sm/7  shadow-inner shadow-accent-light/10">
           Portfolio
         </button>

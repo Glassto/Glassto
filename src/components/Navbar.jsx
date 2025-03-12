@@ -46,7 +46,7 @@ const Navbar = () => {
         >
           {/* Nav animation */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute -left-full top-0 w-1/2 h-full animate-glow-sweep bg-gradient-to-r from-transparent via-secondary/30 to-transparent opacity-20" />
+            <div className="absolute -left-full top-0 w-1/2 h-full animate-glow-sweep bg-gradient-to-r from-transparent via-secondary/40 to-transparent opacity-20" />
           </div>
 
           {/* Left-side */}

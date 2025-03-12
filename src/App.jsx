@@ -1,14 +1,18 @@
 import "./index.css";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./components/LandingPage/Hero";
+import Services from "./components/LandingPage/Services"
 
 function App() {
   return (
-    <div className="wrapper">
-      <div className="pattern" />
-      <Navbar />
-      <Hero />
-    </div>
+    <>
+      <div className="wrapper">
+        <div className="pattern" />
+        <Navbar />
+        <Hero />
+        <Services />
+      </div>
+    </>
   );
 }
 

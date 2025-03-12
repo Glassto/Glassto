@@ -16,6 +16,7 @@
 
   --font-dm-sans: DM Sans, sans-serif;
   --font-inter: Inter, sans-serif;
+  --text-md: 15px;
 
   --breakpoint-xs: 480px;
   --breakpoint-xs: 30rem;
@@ -44,7 +45,7 @@
 @layer components {
   /* w-25 */
   .middle li {
-    @apply w-21 py-4.5 list-none font-inter text-center text-secondary hover:shadow-border hover:drop-shadow-accent-light-2xl cursor-pointer;
+    @apply w-21 py-4.5 list-none font-inter text-center text-slate-200 hover:shadow-border hover:drop-shadow-accent-light-2xl cursor-pointer;
   }
 }
 
@@ -55,6 +56,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+@utility paragraph-gradient {
+  @apply bg-gradient-to-br from-gray-300 to-slate-400;
 }
 
 @keyframes glow-sweep {
