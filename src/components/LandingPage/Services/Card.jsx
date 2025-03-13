@@ -4,15 +4,14 @@ import { BriefcaseIcon } from "@heroicons/react/24/outline";
 
 const Card = ({ card }) => {
   return (
-    <div
-      key={card.id}
-      className="flex justify-between items-start w-full h-max"
-    >
-      <div className="relative flex flex-col justify-between w-7/12 h-140 py-4">
+    <div className="@container flex justify-between items-stretch gap-10 w-full h-full">
+      {/* Text */}
+
+      <div className="flex-2 flex flex-col justify-between gap-12 py-4 bg-gray-400/0">
         <div>
-          <div className="flex items-center gap-2 w-max px-4 py-1 bg-secondary/10 border border-white/10 rounded-2xl">
-            <BriefcaseIcon className="size-4 text-gray-300" />
-            <p className="text-gray-300 text-xs font-medium tracking-widest pt-0.5 uppercase">
+          <div className="flex items-center gap-2 w-max px-3 py-0.5 bg-secondary/10 border border-white/10 rounded-2xl">
+            <BriefcaseIcon className="size-3 text-gray-300" />
+            <p className="text-gray-300 text-[10px] font-medium tracking-widest pt-0.75 uppercase">
               Services
             </p>
           </div>
@@ -20,18 +19,20 @@ const Card = ({ card }) => {
             {card.title} <br />
             {card.subtitle}
           </h3>
-          <p className="paragraph-gradient bg-clip-text text-transparent font-medium text-pretty pt-6 pb-6">
+          <p className="paragraph-gradient bg-clip-text text-transparent font-medium @5xl:max-w-11/12 pt-6 pb-6">
             {card.description}
           </p>
-          <p className="paragraph-gradient bg-clip-text text-transparent font-bold">
-            Investing in SEO is a long-term advantage:
+          <p className="paragraph-gradient py-2 bg-clip-text text-transparent font-bold">
+            {card.pointsTitle}
           </p>
-          <ul className="relative paragraph-gradient bg-clip-text text-transparent text-base/8">
-            <div className="absolute top-0 -z-10 -right-60 w-60 h-full bg-slate-400/30 blur-3xl"></div>
+          <ul className="relative paragraph-gradient space-y-4 bg-clip-text text-transparent text-base/6">
+            <div className="@5xl:block hidden absolute top-0 -z-10 -right-60 w-60 h-full bg-secondary/30 blur-3xl"></div>
             <div className="absolute top-0 -z-10 -left-60 w-60 h-full bg-slate-400/30 blur-3xl"></div>
             {card.points.map((point, index) => (
-              <li className="flex items-center gap-2" key={index}>
-                <CheckCircleIcon className="size-5 text-slate-600" />
+              <li className="flex items-start gap-2" key={index}>
+                <span className="flex items-center h-[1lh]">
+                  <CheckCircleIcon className="size-5 text-slate-600" />
+                </span>
                 <p>{point}</p>
               </li>
             ))}
@@ -44,11 +45,16 @@ const Card = ({ card }) => {
           </button>
         </div>
       </div>
-      <div className="flex justify-end w-6/12">
-        <div className="bg-gray-500/20 bg-cover w-max h-full p-2 rounded-3xl border border-gray-200/10">
+
+      {/* Image */}
+      <div className="flex-1 @5xl:flex hidden bg-gray-500/0">
+        <div className="relative bg-gray-500/20 p-2 w-full h-max rounded-3xl border border-gray-300/5">
+          <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none rounded-3xl">
+            <div className="absolute -left-full top-0 w-1/2 h-full animate-glow-sweep bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-20" />
+          </div>
           <img
-            className="bg-cover w-120 h-140 rounded-2xl"
-            src={card.id === 1 ? "Web Development.webp" : "Web Design.webp"}
+            className="object-cover w-full h-136 rounded-2xl"
+            src={card.id === 1 ? "S.E.O.webp" : "Web Design.webp"}
             alt={`${card.title} image`}
           />
         </div>
