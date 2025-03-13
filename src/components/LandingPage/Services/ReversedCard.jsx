@@ -21,9 +21,9 @@ const ReversedServiceCard = ({ card }) => {
       {/* Text */}
       <div className="flex-2 flex flex-col justify-between gap-12 py-4 bg-gray-400/0">
         <div>
-          <div className="flex items-center gap-2 w-max px-3 py-0.5 bg-secondary/10 border border-white/10 rounded-2xl">
-            <BriefcaseIcon className="size-3 text-gray-300" />
-            <p className="text-gray-300 text-[10px] font-medium tracking-widest pt-0.75 uppercase">
+          <div className="flex items-center gap-2 w-max px-3 py-0.5 opacity-50 bg-secondary/10 border border-white/10 rounded-2xl">
+            <BriefcaseIcon className="size-3 text-gray-100" />
+            <p className="text-gray-100 text-[10px] font-medium tracking-widest pt-0.75 uppercase">
               Services
             </p>
           </div>

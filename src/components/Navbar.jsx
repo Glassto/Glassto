@@ -39,8 +39,8 @@ const Navbar = () => {
       <header className="flex flex-col fixed z-10 top-0 left-0 sm:w-[calc(100%-80px)] w-[calc(100%-30px)] sm:mx-10 mx-4 items-center">
         {/* Navbar */}
         <div
-          className={`w-full sm:h-8 h-6 rounded-b-lg transition-all duration-200 ${isScrolled ? "backdrop-blur-md" : ""}`}
-        ></div>
+          className={`sm:visible invisible w-full sm:h-8 h-6 rounded-b-lg transition-all duration-200 ${isScrolled ? "backdrop-blur-md" : ""}`}
+        />
 
         <div className="flex items-center gap-3 w-full">
           <nav
