@@ -39,12 +39,12 @@ const Navbar = () => {
       <header className="flex flex-col fixed z-10 top-0 left-0 sm:w-[calc(100%-80px)] w-[calc(100%-30px)] sm:mx-10 mx-4 items-center">
         {/* Navbar */}
         <div
-          className={`w-full sm:h-8 h-6 rounded-b-lg transition-all duration-200 ${isScrolled ? "backdrop-blur-lg" : ""}`}
+          className={`w-full sm:h-8 h-6 rounded-b-lg transition-all duration-200 ${isScrolled ? "backdrop-blur-md" : ""}`}
         ></div>
 
         <div className="flex items-center gap-3 w-full">
           <nav
-            className={`relative overflow-hidden flex justify-between items-center w-full xs:min-h-15.5 min-h-12 px-4 pr-3 border rounded-2xl backdrop-blur-sm bg-primary/15 hover:bg-primary/40 hover:drop-shadow-xl border-secondary/40 transition-all duration-300 ${
+            className={`relative overflow-hidden flex justify-between items-center w-full xs:min-h-15.5 min-h-12 px-4 pr-3 border rounded-2xl backdrop-blur-md bg-primary/15 hover:bg-primary/40 hover:drop-shadow-xl border-secondary/40 transition-all duration-300 ${
               isScrolled ? "bg-primary/40 backdrop-blur-2xl" : ""
             }`}
           >

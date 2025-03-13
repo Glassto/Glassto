@@ -45,10 +45,10 @@ const Card = ({ card }) => {
         </div>
       </div>
       <div className="flex justify-end w-6/12">
-        <div className="bg-gray-500/20 w-max h-full p-2 rounded-3xl border border-gray-200/10">
+        <div className="bg-gray-500/20 bg-cover w-max h-full p-2 rounded-3xl border border-gray-200/10">
           <img
-            className="bg-cover size-120 h-140 rounded-2xl"
-            src="images/services-image.png"
+            className="bg-cover w-120 h-140 rounded-2xl"
+            src={card.id === 1 ? "Web Development.webp" : "Web Design.webp"}
             alt={`${card.title} image`}
           />
         </div>

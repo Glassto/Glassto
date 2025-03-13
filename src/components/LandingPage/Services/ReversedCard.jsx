@@ -10,9 +10,9 @@ const ReversedServiceCard = ({ card }) => {
       <div className="flex w-6/12">
         <div className="bg-gray-500/20 w-max h-full p-2 rounded-3xl border border-gray-200/10">
           <img
-            className="bg-cover size-130 rounded-2xl"
-            src="images/services-image.png"
-            alt=""
+            className="bg-cover w-120 h-140 rounded-2xl"
+            src="Web Development.webp"
+            alt={`${card.title} Image Not Found`}
           />
         </div>
       </div>
