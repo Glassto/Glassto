@@ -12,7 +12,7 @@ const Hero = () => {
 
       {/* Heading */}
       <div className="heading flex flex-col text-center mt-10">
-        <h1 className="md:text-8xl/tight sm:text-7xl/tight text-6xl/tight text-balance font-bold bg-gradient-to-br from-white/80 from-40% to-gray-800/20 bg-clip-text text-transparent ">
+        <h1 className="md:text-8xl/tight sm:text-7xl/tight text-6xl/tight text-balance font-bold bg-gradient-to-br from-gray-300/85 from-40% to-slate-800/20 bg-clip-text text-transparent">
           Your Business,
           <br /> Our{" "}
           <span className=" font-black  bg-gradient-to-r from-accent-light to-accent bg-clip-text text-transparent">

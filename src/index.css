@@ -6,13 +6,15 @@
 @theme {
   --color-primary: #0c0c0c;
   --color-secondary: #ddc6b6;
+  --color-tertiary: #9fadc0;
   --color-accent: #f35216;
   --color-accent-light: #ff9a75;
 
   --shadow-border: 0 1px 0 0 #ddc6b6;
 
-  --drop-shadow-accent-sm: 0 0px 2px #f35216;
+  --drop-shadow-accent-sm: 0 0px 2px --color-accent;
   --drop-shadow-accent-light-2xl: 0 40px 32px #ff9a75;
+  --drop-shadow-tertiary-2xl: 0 0px 32px #40454d;
 
   --font-dm-sans: DM Sans, sans-serif;
   --font-inter: Inter, sans-serif;
@@ -23,7 +25,7 @@
 
   ----container-hero: 50.75rem;
 
-  --background-image-hero: url("/background.png");
+  --background-image-hero: url("/background.webp");
 
   --ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }

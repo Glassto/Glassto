@@ -4,7 +4,7 @@ export const servicesCardsData = [
     title: "Search Engine Optimization",
     subtitle: "(S.E.O)",
     description:
-      "Unlike short-term advertising solutions, SEO delivers sustainable growth, builds long-term authority, and maximizes return on investment. Transform your online platform into a powerful tool for business growth and success with professional SEO services",
+      "Unlike short-term advertising solutions, our SEO delivers sustainable growth, builds long-term authority, and maximizes return on investment. Transform your online platform into a powerful tool for business growth and success with professional SEO services.",
     pointsTitle: "Investing in SEO is a long-term advantage for:",
     points: [
       "Consistent organic traffic, with no cost per click.",
@@ -33,7 +33,8 @@ export const servicesCardsData = [
     title: "Web Design",
     description:
       "Transform your online presence with professional designs that make great first impressions. We combine eye-catching visuals with intuitive navigation to keep visitors engaged and guide them to take action.",
-    pointsTitle: "Strategic design drives user engagement and conversions through:",
+    pointsTitle:
+      "Strategic design drives user engagement and conversions through:",
     points: [
       "Custom layouts reflecting your brand identity",
       "User-friendly menus and page structures",

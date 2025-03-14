@@ -12,7 +12,7 @@ const Services = () => {
         </div>
       </div> */}
 
-      <div className="bg-secondary/0 space-y-28 w-full h-max mt-4 md:px-12 sm:px-6 md:py-8 py-6">
+      <div className="bg-secondary/0 sm:space-y-28 space-y-8 sm:divide-y-0 divide-y divide-white/10 w-full h-max mt-4 md:px-12 sm:px-6 md:py-8 py-6">
         <ServicesCards />
       </div>
     </>

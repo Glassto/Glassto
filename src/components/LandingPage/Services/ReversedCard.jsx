@@ -3,12 +3,12 @@ import { BriefcaseIcon } from "@heroicons/react/24/outline";
 
 const ReversedServiceCard = ({ card }) => {
   return (
-    <div className="@container flex justify-between items-stretch gap-10 w-full h-full">
+    <div className="@container flex justify-between items-stretch gap-16 w-full h-full">
       {/* Image */}
       <div className="flex-1 @5xl:flex hidden bg-gray-500/0">
-        <div className="relative bg-gray-500/20 p-2 w-full h-full rounded-3xl border border-gray-300/5">
-          <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none rounded-3xl">
-            <div className="absolute -left-full top-0 w-1/2 h-full animate-glow-sweep bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-20" />
+        <div className="relative bg-gray-500/20 p-2 w-full h-max rounded-3xl border border-gray-300/5">
+          <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none rounded-3xl ">
+            <div className="absolute -left-40 -top-80 w-1/2 h-200 animate-glow-sweep rotate-45 bg-gradient-to-r from-transparent via-white/80 to-transparent opacity-20" />
           </div>
           <img
             className="object-cover w-full h-136 rounded-2xl"
@@ -19,7 +19,7 @@ const ReversedServiceCard = ({ card }) => {
       </div>
 
       {/* Text */}
-      <div className="flex-2 flex flex-col justify-between gap-12 py-4 bg-gray-400/0">
+      <div className="flex-2 flex flex-col justify-between gap-12 mb-8 py-4 bg-gray-400/0">
         <div>
           <div className="flex items-center gap-2 w-max px-3 py-0.5 opacity-50 bg-secondary/10 border border-white/10 rounded-2xl">
             <BriefcaseIcon className="size-3 text-gray-100" />
@@ -51,7 +51,7 @@ const ReversedServiceCard = ({ card }) => {
           </ul>
         </div>
         <div>
-          <button className="flex items-center gap-2 px-6 py-2 rounded-md font-inter font-semibold bg-gradient-to-br from-gray-300 to-slate-400">
+          <button className="flex items-center gap-2 px-6 py-2 rounded-md font-inter font-semibold hover:drop-shadow-tertiary-2xl bg-gradient-to-br from-gray-300 to-slate-400 transition-all duration-300 cursor-pointer">
             <p>Learn More</p>
             <ArrowLongRightIcon className="size-5" />
           </button>
