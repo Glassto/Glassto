@@ -9,7 +9,7 @@ import {
 const Portfolio = () => {
   return (
     <>
-      <div className="flex items-center justify-center w-full h-12 mt-20 mb-10 bg-gradient-to-r from-transparent via-secondary/5 to-transparent">
+      <div className="flex items-center justify-center w-full h-12 mt-10 mb-10 bg-gradient-to-r from-transparent via-secondary/5 to-transparent">
         <div className="flex items-center justify-center gap-2 w-full">
           <ArchiveBoxIcon className="size-5 text-white/80" />
           <p className="text-white/80 text-[13px] font-semibold tracking-widest pt-0.25 uppercase">
@@ -22,7 +22,7 @@ const Portfolio = () => {
         {portofolioCardsData.map((card) => (
           <div
             key={card.id}
-            className="@container relative bg-gray-500/5 p-2 w-full h-full rounded-xl border border-gray-300/5"
+            className="@container bg-gray-500/5 p-2 w-full h-full rounded-xl border border-gray-300/5"
           >
             {/* Image */}
             <div className="relative">
@@ -35,19 +35,23 @@ const Portfolio = () => {
 
             {/* Information */}
             <div className="p-2">
-              {/* Header */}
-              <div className="flex items-center justify-between px-2 py-2">
-                <p className=" font-extrabold text-2xl text-gray-300">
-                  {card.title}
-                </p>
-                <div className="flex items-center gap-2 font-medium text-xs text-gray-500">
-                  <CalendarIcon className="size-4 mb-0.5" />
-                  {card.date}
+              <div className="grow">
+                {/* Header */}
+                <div className="flex items-center justify-between px-2 py-2">
+                  <p className=" font-extrabold text-2xl text-gray-300">
+                    {card.title}
+                  </p>
+                  <div className="flex items-center gap-2 font-medium text-xs text-gray-500">
+                    <CalendarIcon className="size-4 mb-0.5" />
+                    {card.date}
+                  </div>
                 </div>
-              </div>
 
-              {/* Description */}
-              <p className="p-2 text-gray-400 text-sm">{card.description}</p>
+                {/* Description */}
+                <p className="p-2 pb-0 text-gray-400 text-sm">
+                  {card.description}
+                </p>
+              </div>
 
               {/* Button */}
               <div className="@sm:flex items-center justify-between bg-secondary/0 w-full h-full rounded-lg mt-6  text-gray-500 text-xs font-medium">

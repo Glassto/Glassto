@@ -55,7 +55,7 @@ const MobileMenu = ({ isOpen }) => {
 
   return (
     <div
-      className={`fixed lg:hidden inset-x-0 sm:mt-5.5 bottom-0 border-t border-secondary/40 bg-primary backdrop-blur-md text-white transition-all ease-in-out duration-200
+      className={`fixed lg:hidden z-10 inset-x-0 sm:mt-5.5 bottom-0 border-t border-secondary/40 bg-primary backdrop-blur-md text-white transition-all ease-in-out duration-200
         ${isOpen ? "inset-y-26" : "inset-y-full"}`}
     >
       <div className="wrapper flex flex-col justify-between h-full">
@@ -74,8 +74,8 @@ const MobileMenu = ({ isOpen }) => {
                     item.label === "Services" && isExpanded
                       ? "-rotate-90"
                       : item.rotate
-                      ? "rotate-90"
-                      : ""
+                        ? "rotate-90"
+                        : ""
                   }`}
                 />
               </div>
