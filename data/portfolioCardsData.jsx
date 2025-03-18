@@ -15,7 +15,7 @@ export const portofolioCardsData = [
     title: "Quartz",
     date: "12 July 2023",
     description:
-      "A sophisticated digital experience mirroring the refined atmosphere of Quartz – a modern fine-dining restaurant specializing in artisanal cuisine. This project combines aesthetic minimalism with intuitive functionality to create an online presence that reflects the restaurant's commitment to luxury and attention to detail. Quartz is a website mainly designed to redefine user experiences through seamless interactions.",
+      "A sophisticated digital experience mirroring the refined atmosphere of Quartz – a modern fine-dining restaurant specializing in artisanal cuisine. This project combines aesthetic minimalism with intuitive functionality to create an online presence that reflects the restaurant's commitment to luxury and attention to detail.",
     languages: ["HTML", "CSS", "Javascript"],
     link: "quartz",
   },

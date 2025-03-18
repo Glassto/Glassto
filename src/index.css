@@ -14,7 +14,7 @@
 
   --drop-shadow-accent-sm: 0 0px 2px --color-accent;
   --drop-shadow-accent-light-2xl: 0 40px 32px #ff9a75;
-  --drop-shadow-tertiary-2xl: 0 0px 32px #40454d;
+  --drop-shadow-tertiary-2xl: 0 0px 8px #40454d;
 
   --font-dm-sans: DM Sans, sans-serif;
   --font-inter: Inter, sans-serif;

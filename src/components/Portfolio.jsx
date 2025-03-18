@@ -3,13 +3,13 @@ import {
   ArchiveBoxIcon,
   CalendarIcon,
   CpuChipIcon,
-  EyeIcon,
+  ArrowLongRightIcon,
 } from "@heroicons/react/24/solid";
 
 const Portfolio = () => {
   return (
     <>
-      <div className="flex items-center justify-center w-full h-12 mt-10 mb-10 bg-gradient-to-r from-transparent via-secondary/5 to-transparent">
+      <div className="flex items-center justify-center w-full h-12 mt-16 mb-8 bg-gradient-to-r from-transparent via-secondary/5 to-transparent">
         <div className="flex items-center justify-center gap-2 w-full">
           <ArchiveBoxIcon className="size-5 text-white/80" />
           <p className="text-white/80 text-[13px] font-semibold tracking-widest pt-0.25 uppercase">
@@ -17,24 +17,24 @@ const Portfolio = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 p-2">
         {/*Container */}
         {portofolioCardsData.map((card) => (
           <div
             key={card.id}
-            className="@container bg-gray-500/5 p-2 w-full h-full rounded-xl border border-gray-300/5"
+            className="@container relative flex flex-col bg-gray-500/5 p-2 w-full h-full rounded-xl border border-gray-300/5"
           >
             {/* Image */}
-            <div className="relative">
+            <div className="relative z-10">
               <img
-                className="object-cover object-top w-full h-10/12 rounded-lg opacity-70 hover:opacity-80 transition-all duration-300"
+                className="object-cover object-top w-full h-full rounded-lg opacity-70 hover:opacity-80 transition-all duration-300"
                 src={card.image}
                 alt=""
               />
             </div>
 
             {/* Information */}
-            <div className="p-2">
+            <div className="flex flex-col justify-between h-full p-2">
               <div className="grow">
                 {/* Header */}
                 <div className="flex items-center justify-between px-2 py-2">
@@ -54,7 +54,7 @@ const Portfolio = () => {
               </div>
 
               {/* Button */}
-              <div className="@sm:flex items-center justify-between bg-secondary/0 w-full h-full rounded-lg mt-6  text-gray-500 text-xs font-medium">
+              <div className="@sm:flex items-center justify-between bg-secondary/0 w-full h-max rounded-lg mt-6  text-gray-500 text-xs font-medium">
                 <div className="flex items-center pt-1">
                   <CpuChipIcon className="size-4" />
                   <div className="flex items-center max-w-full overflow-x-hidden divide-x divide-gray-600 px-2">
@@ -67,10 +67,10 @@ const Portfolio = () => {
                   <a
                     href={`https://glassto.github.io/${card.link}`}
                     target="_blank"
-                    className="flex items-center justify-center gap-3 px-6 py-2 rounded-md font-inter font-semibold text-gray-600 tracking-wider hover:drop-shadow-tertiary-2xl bg-gradient-to-br from-gray-300 to-slate-400 transition-all duration-300 cursor-pointer"
+                    className="flex items-center justify-center gap-3 px-6 py-2 rounded-md font-inter font-semibold text-sm text-gray-600 tracking-wider hover:drop-shadow-tertiary-2xl bg-gradient-to-br from-gray-300 to-slate-400 transition-all duration-300 cursor-pointer"
                   >
                     <p>Take a Look</p>
-                    <EyeIcon className="size-4" />
+                    <ArrowLongRightIcon className="size-4" />
                   </a>
                 </div>
               </div>

@@ -39,7 +39,7 @@ const Card = ({ card }) => {
           </ul>
         </div>
         <div>
-          <button className="flex items-center gap-2 px-6 py-2 rounded-md font-inter font-semibold hover:drop-shadow-tertiary-2xl bg-gradient-to-br from-gray-300 to-slate-400 transition-all duration-300 cursor-pointer">
+          <button className="flex items-center gap-2 px-6 py-2 rounded-md font-inter font-semibold text-gray-600 hover:text-gray-700 hover:drop-shadow-tertiary-2xl bg-gradient-to-br from-gray-300 to-slate-400 transition-all duration-300 cursor-pointer">
             <p>Learn More</p>
             <ArrowLongRightIcon className="size-5" />
           </button>
